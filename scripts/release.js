@@ -1,5 +1,5 @@
 const chalk = require('chalk')
-const { getTextFromFile, sendMessageToSlack } = require('./utils/slackUtils')
+const { getTextFromFile, sendMessageToSlack } = require('./utils/slack-utils')
 
 const slackChannel = process.argv[2]
 const filePath = process.argv[3]
