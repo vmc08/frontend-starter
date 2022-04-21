@@ -14,8 +14,7 @@ The top level directory structure will be as follows:
 
 - `.ts` - utility functions or config files will be follow `camelCase.ts`
 - `.tsx` - files that holds react components
-  - `page` - if it's a page file, it should follow `kebab-case.tsx`
-  - `component` - if it's a component/module, should follow `PascalCase.tsx`
+  - `file name` - should follow `kebab-case.{tsx|ts|js}`
 
 ## Path aliasing
 
@@ -23,7 +22,7 @@ Added path aliasing **(@folder-name)** is used to easily determine which files w
 
 ## Graphql codegen
 
-Running **graphql-codegen** requires you to add **.env** file with `NEXT_PUBLIC_API_URL`'s value as your graphql endpoint. After doing so, you can do `npm run codegen` which will auto generate the typescript definitions for you.
+Running **graphql-codegen** requires you to add **.env** file with `NEXT_PUBLIC_API_URL`'s value as your graphql endpoint. After doing so, you can do `npm run generate:types` which will auto generate the typescript definitions for you.
 
 ## Setting up husky, lint-staged and commitizen
 
