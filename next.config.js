@@ -1,12 +1,10 @@
 module.exports = {
-  headers: [
+  headers: async () => [
     {
       source: '/.well-known/apple-app-site-association',
       headers: [
-        {
-          key: 'Content-Type',
-          value: 'application/json',
-        },
+        { key: 'Content-Type', value: 'application/json' },
+        { key: 'Access-Control-Allow-Origin', value: '*' },
       ],
     },
   ],
