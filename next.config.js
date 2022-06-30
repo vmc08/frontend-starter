@@ -11,7 +11,7 @@ module.exports = {
   reactStrictMode: true,
   env: {
     appIcon: '/public/favicon.ico',
-    appName: 'HOV.fe',
+    appName: 'FE Starter',
     appDescription: 'Build to boost development start up vs starting from scratch.',
   },
   /**

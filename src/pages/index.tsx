@@ -5,7 +5,7 @@ import NextImage from 'next/image'
 import Layout from '@components/layout'
 
 const Home: FC = () => (
-  <Layout title="Welcome to HOV">
+  <Layout title="FE Starter">
     <Flex p={8} alignItems="center" justifyContent="center">
       <NextImage src="/logo.png" width={200} height={200} />
     </Flex>
