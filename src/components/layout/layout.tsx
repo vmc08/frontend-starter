@@ -2,13 +2,13 @@ import { Box, Container, Flex, Heading, Icon, IconButton } from '@chakra-ui/reac
 import AppSidebar from '@components/app-sidebar'
 import MetaTags from '@components/meta-tags'
 import { LogoutIcon } from '@heroicons/react/solid'
-import { FC, useState } from 'react'
+import { FC, PropsWithChildren, useState } from 'react'
 
 interface LayoutProps {
   title: string
 }
 
-const Layout: FC<LayoutProps> = ({ children, title }) => {
+const Layout: FC<PropsWithChildren<LayoutProps>> = ({ children, title }) => {
   const [isCollapsed, setIsCollpased] = useState(false)
   return (
     <Flex>

@@ -66,10 +66,10 @@ const AppSidebar: FC<AppSidebarProps> = ({ isCollapsed = false }) => {
               <Avatar size={isCollapsed ? 'xs' : 'sm'} borderRadius="md" name={process.env.appName} src="/logo.png" />
               {!isCollapsed && (
                 <Flex flexDir="column" ml={2} alignItems="start">
-                  <Heading maxW="124px" as="h4" size="xs" mb={0} isTruncated>
+                  <Heading maxW="124px" as="h4" size="xs" mb={0} noOfLines={1}>
                     {process.env.appName}
                   </Heading>
-                  <Text maxW="124px" lineHeight="shorter" fontSize="smaller" color="gray.800" isTruncated>
+                  <Text maxW="124px" lineHeight="shorter" fontSize="smaller" color="gray.800" noOfLines={1}>
                     {process.env.appDescription}
                   </Text>
                 </Flex>
