@@ -1,7 +1,7 @@
 import { Box, Container, Flex, Heading, Icon, IconButton } from '@chakra-ui/react'
 import AppSidebar from '@components/app-sidebar'
 import MetaTags from '@components/meta-tags'
-import { LogoutIcon } from '@heroicons/react/solid'
+import { ArrowLeftOnRectangleIcon } from '@heroicons/react/24/solid'
 import { FC, PropsWithChildren, useState } from 'react'
 
 interface LayoutProps {
@@ -35,7 +35,7 @@ const Layout: FC<PropsWithChildren<LayoutProps>> = ({ children, title }) => {
             size="xs"
             variant="unstyled"
             aria-label="toggle collapse"
-            icon={<Icon fontSize={16} as={LogoutIcon} />}
+            icon={<Icon fontSize={16} as={ArrowLeftOnRectangleIcon} />}
             onClick={() => setIsCollpased((v) => !v)}
           />
           <Heading as="h2" fontSize="xl" mb={0}>

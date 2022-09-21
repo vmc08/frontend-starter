@@ -1,6 +1,6 @@
 import { Avatar, Button, Flex, Heading, Menu, MenuButton, MenuList, Text, VStack } from '@chakra-ui/react'
-import { ChevronUpIcon } from '@heroicons/react/outline'
-import { LogoutIcon, SearchIcon, UserIcon } from '@heroicons/react/solid'
+import { ChevronUpIcon } from '@heroicons/react/24/outline'
+import { ArrowLeftOnRectangleIcon, MagnifyingGlassIcon, UserIcon } from '@heroicons/react/24/solid'
 import { logout } from '@utils/auth-utils'
 import Link from 'next/link'
 import { FC } from 'react'
@@ -33,7 +33,7 @@ const AppSidebar: FC<AppSidebarProps> = ({ isCollapsed = false }) => {
         <VStack px={2} mt={3} spacing={stackSpacing} alignItems="start">
           <MenuItem
             shortCutKeys={['Ctrl', 'K']}
-            icon={SearchIcon}
+            icon={MagnifyingGlassIcon}
             label="Search"
             isCollapsed={isCollapsed}
             onClick={() => {}}
@@ -80,7 +80,7 @@ const AppSidebar: FC<AppSidebarProps> = ({ isCollapsed = false }) => {
             <VStack spacing={1} alignItems="start">
               <MenuItem icon={UserIcon} label="Menu item 5" />
               <MenuItem icon={UserIcon} label="Menu item 6" />
-              <MenuItem icon={LogoutIcon} label="Logout" onClick={logout} />
+              <MenuItem icon={ArrowLeftOnRectangleIcon} label="Logout" onClick={logout} />
             </VStack>
           </MenuList>
         </Menu>
