@@ -7,7 +7,7 @@ import Layout from '@components/layout'
 const Home: FC = () => (
   <Layout title="FE Starter">
     <Flex p={8} alignItems="center" justifyContent="center">
-      <NextImage src="/logo.png" width={200} height={200} />
+      <NextImage alt="Logo" src="/logo.png" width={200} height={200} />
     </Flex>
   </Layout>
 )
